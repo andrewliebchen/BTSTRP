@@ -1,0 +1,55 @@
+// KSS Example buttons
+//
+// Description
+//
+// Markup:
+// <a href="#" class="btn {$modifiers}">Click!</a>
+//
+// .btn-primary - Primary button
+// .btn-success - Success button
+// .btn-warning - Warning button
+//
+// Styleguide 1.1
+
+$button-height: 3em;
+$color-default: #DDDDDD;
+$color-primary: #0074D9;
+$color-success: #2ECC40;
+$color-warning: #FF4136;
+
+@mixin button-type($background-color, $color: white, $hover-darken: 10%) {
+  background-color: $background-color;
+  color: $color;
+
+  &:hover {
+    background-color: darken($background-color, $hover-darken);
+  }
+}
+
+.btn {
+  @include button-type($color-default, $color-primary);
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1px rgba(black, 0.1);
+  display: inline-block;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  line-height: $button-height;
+  padding: 0 1em;
+  text-decoration: none;
+
+  &:focus {
+    box-shadow: 0 0 0 1px white, 0 0 0 3px $color-primary;
+    outline: none;
+  }
+}
+
+.btn-primary {
+  @include button-type($color-primary);
+}
+
+.btn-success {
+  @include button-type($color-success);
+}
+
+.btn-warning {
+  @include button-type($color-warning, $hover-darken: 20%);
+}

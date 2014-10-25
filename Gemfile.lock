@@ -1,0 +1,13 @@
+GEM
+  specs:
+    rainbow (2.0.0)
+    sass (3.3.14)
+    scss-lint (0.25.1)
+      rainbow (~> 2.0)
+      sass (~> 3.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  scss-lint
