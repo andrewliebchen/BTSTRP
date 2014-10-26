@@ -5,7 +5,7 @@
 // Reset and dependencies
 @import "btstrp/normalize";
 @import "btstrp/print";
-@import "btstrp/glyphicons";
+// @import "btstrp/glyphicons";
 
 // Core CSS
 @import "btstrp/scaffolding";
@@ -48,3 +48,6 @@
 // Utility classes
 @import "btstrp/utilities";
 @import "btstrp/responsive-utilities";
+
+// BTSTRP addons
+@import "btstrp/btstrp-container";

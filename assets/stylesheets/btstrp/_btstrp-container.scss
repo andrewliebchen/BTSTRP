@@ -1,0 +1,8 @@
+.btstrp {
+  @include clearfix;
+  width: 100em;
+  border: 1px solid $gray-light;
+  margin: 1em auto;
+  position: relative;
+  border-radius: 1em;
+}

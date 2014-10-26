@@ -5,10 +5,9 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     connect: {
-      kss: {
+      server: {
         options: {
           port: 9000,
-          base: 'styleguide',
           keepalive: true,
           livereload: true
         }
@@ -16,9 +15,9 @@ module.exports = function (grunt) {
     },
 
     sass: {
-      kss: {
+      dist: {
         files: {
-          'styleguide/public/btstrp.css': 'assets/stylesheets/btstrp.scss',
+          'assets/stylesheets/btstrp.css': 'assets/stylesheets/btstrp.scss',
         },
         options: {
           style: 'expanded',
@@ -27,25 +26,11 @@ module.exports = function (grunt) {
       }
     },
 
-    kss: {
-      options: {
-        template: 'template/',
-        includeType: 'sass'
-      },
-      dist: {
-        files: {
-          'styleguide': ['assets/stylesheets/**'],
-        }
-      }
-    },
-
     watch: {
       files: [
-        'assets/stylesheets/**/*',
-        'template/**/*',
-        'assets/stylesheets/styleguide.md'
+        'assets/stylesheets/**/*'
       ],
-      tasks: ['kss', 'sass'],
+      tasks: ['sass'],
       options: {
         spawn: false,
         livereload: true
@@ -53,33 +38,15 @@ module.exports = function (grunt) {
     },
 
     concurrent: {
-      kss: {
-        tasks: ['watch', 'connect:kss'],
-        options: {
-          logConcurrentOutput: true
-        }
+      tasks: ['watch', 'connect'],
+      options: {
+        logConcurrentOutput: true
       }
     },
-
-    scsslint: {
-      allFiles: [
-        'assets/stylesheets/**/*.scss'
-      ],
-      options: {
-        config: '.scss-lint.yml',
-        colorizeOutput: true,
-        compact: true
-      }
-    }
   });
 
   grunt.registerTask(
     'default',
-    ['kss', 'sass', 'concurrent:kss']
-  );
-
-  grunt.registerTask(
-    'lint',
-    ['scsslint']
+    ['sass', 'concurrent']
   );
 };
