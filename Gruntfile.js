@@ -18,7 +18,7 @@ module.exports = function (grunt) {
     sass: {
       kss: {
         files: {
-          'stylguide/application.css': 'assets/stylesheets/**/*',
+          'styleguide/public/btstrp.css': 'assets/stylesheets/btstrp.scss',
         },
         options: {
           style: 'expanded',
@@ -45,7 +45,7 @@ module.exports = function (grunt) {
         'template/**/*',
         'assets/stylesheets/styleguide.md'
       ],
-      tasks: ['kss'],
+      tasks: ['kss', 'sass'],
       options: {
         spawn: false,
         livereload: true
@@ -75,7 +75,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask(
     'default',
-    ['kss', 'concurrent:kss']
+    ['kss', 'sass', 'concurrent:kss']
   );
 
   grunt.registerTask(
