@@ -1,33 +1,10 @@
+//
 // Buttons
-//
-// Use the button classes on an `<a>`, `<button>`, or `<input>` element.
-//
-// Markup:
-// <a class="btn btn-default" href="#" role="button">Link</a>
-// <button class="btn btn-default" type="submit">Button</button>
-// <input class="btn btn-default" type="button" value="Input">
-// <input class="btn btn-default" type="submit" value="Submit">
-//
-// Styleguide 5.0
+// --------------------------------------------------
 
-// Button states
-//
-// Buttons will appear pressed (with a darker background, darker border, and inset shadow)
-// when active. For `<button>` elements, this is done via `:active`. For `<a>` elements,
-// it's done with `.active`. However, you may use `.active` on `<button>`s should you
-// need to replicate the active state programmatically. The disabled state or attribute
-// makes buttons look unclickable by fading them back 50%.
-//
-// Markup:
-// <button type="button" class="btn btn-default {$modifiers}">Button</button>
-// <a href="#" class="btn btn-default {$modifiers}" role="button">Link</a>
-//
-// :hover    - Hover state
-// :active   - Active state
-// .active   - Active state via a class
-// .disabled - Disabled state via a class
-//
-// Styleguide 5.1
+
+// Base styles
+// --------------------------------------------------
 
 .btn {
   display: inline-block;
@@ -74,22 +51,8 @@
 }
 
 
-// Alternate Buttons
-//
-// Use any of the available button classes to quickly create a styled button.
-//
-// Markup:
-// <button type="button" class="btn {$modifiers}">Button</button>
-//
-// .btn-default - Default
-// .btn-primary - Provides extra visual weight and identifies the primary action in a set of buttons
-// .btn-success - Indicates a successful or positive action
-// .btn-info    - Contextual button for informational alert messages
-// .btn-warning - Indicates caution should be taken with this action
-// .btn-danger  - Indicates a dangerous or potentially negative action
-// .btn-link    - Deemphasize a button by making it look like a link while maintaining button behavior
-//
-// Styleguide 5.2
+// Alternate buttons
+// --------------------------------------------------
 
 .btn-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
@@ -115,82 +78,9 @@
 }
 
 
-// Link buttons
-// -------------------------
-
-// Make a button look and behave like a link
-.btn-link {
-  color: $link-color;
-  font-weight: normal;
-  cursor: pointer;
-  border-radius: 0;
-
-  &,
-  &:active,
-  &[disabled],
-  fieldset[disabled] & {
-    background-color: transparent;
-    @include box-shadow(none);
-  }
-  &,
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: transparent;
-  }
-  &:hover,
-  &:focus {
-    color: $link-hover-color;
-    text-decoration: underline;
-    background-color: transparent;
-  }
-  &[disabled],
-  fieldset[disabled] & {
-    &:hover,
-    &:focus {
-      color: $btn-link-disabled-color;
-      text-decoration: none;
-    }
-  }
-}
-
-
-// Button sizes
-//
-// Fancy larger or smaller buttons? Add `.btn-lg`, `.btn-sm`, or `.btn-xs` for additional sizes.
-//
-// Markup:
-// <button type="button" class="btn btn-primary {$modifiers}">Button</button>
-// <button type="button" class="btn btn-default {$modifiers}">Button</button>
-//
-// .btn-lg - Large button
-// .btn-sm - Small button
-// .btn-xs - Extra-small button
-//
-// Styleguide 5.3
-
-.btn-lg {
-  // line-height: ensure even-numbered height of button next to large input
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
-}
-.btn-sm {
-  // line-height: ensure proper height of button next to small input
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
-}
-.btn-xs {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small);
-}
-
 
 // Block button
-//
-// Create block level buttons—those that span the full width of a parent— by adding .btn-block.
-//
-// Markup:
-// <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-// <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
-//
-// Styleguide 5.4
+// --------------------------------------------------
 
 .btn-block {
   display: block;

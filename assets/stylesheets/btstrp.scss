@@ -1,1 +1,51 @@
-@import "btstrp-index";
+// Core variables and mixins
+@import "btstrp/variables";
+@import "btstrp/mixins";
+
+// Reset and dependencies
+@import "btstrp/normalize";
+@import "btstrp/print";
+// @import "btstrp/glyphicons";
+
+// Core CSS
+@import "btstrp/scaffolding";
+@import "btstrp/type";
+@import "btstrp/grid";
+@import "btstrp/tables";
+@import "btstrp/forms";
+@import "btstrp/buttons";
+
+// Components
+@import "btstrp/component-animations";
+@import "btstrp/dropdowns";
+@import "btstrp/button-groups";
+@import "btstrp/input-groups";
+@import "btstrp/navs";
+@import "btstrp/navbar";
+@import "btstrp/breadcrumbs";
+@import "btstrp/pagination";
+@import "btstrp/pager";
+@import "btstrp/labels";
+@import "btstrp/badges";
+@import "btstrp/jumbotron";
+@import "btstrp/thumbnails";
+@import "btstrp/alerts";
+@import "btstrp/progress-bars";
+@import "btstrp/media";
+@import "btstrp/list-group";
+@import "btstrp/panels";
+@import "btstrp/responsive-embed";
+@import "btstrp/wells";
+@import "btstrp/close";
+
+// Components w/ JavaScript
+@import "btstrp/modals";
+@import "btstrp/tooltip";
+@import "btstrp/popovers";
+
+// Utility classes
+@import "btstrp/utilities";
+@import "btstrp/responsive-utilities";
+
+// BTSTRP addons
+@import "btstrp/btstrp-container";
