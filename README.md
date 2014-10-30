@@ -1,20 +1,13 @@
 ## Bootstrap features in BTSTRP
 ### CSS
 * Grid system
-  * Media queries
-  * Grid options
-  * Ex: Stacked-to-horizontal
-  * Ex: Fluid container
-  * Ex: Mobile and desktops
-  * Ex: Mobile, tablet, desktops
-  * Ex: Column wrapping
+  * ~~Media queries~~
   * Responsive column resets
   * Offsetting columns
   * Nesting columns
   * Column ordering
-  * Less mixins and variables
 
-*Typography
+* Typography
   * Headings
   * Body copy
   * Inline text elements
@@ -39,7 +32,7 @@
   * Hover rows
   * Condensed table
   * Contextual classes
-  * Responsive tables
+  * ~~Responsive tables~~
 
 * Forms
   * Basic example
@@ -63,7 +56,7 @@
   * ~~Link button~~
 
 * Images
-  * Responsive images
+  * ~~Responsive images~~
   * Image shapes
 
 * Helper classes
@@ -75,40 +68,24 @@
   * Center content blocks
   * Clearfix
   * Showing and hiding content
-  * Screen reader content
-  * Image replacement
+  * ~~Screen reader content~~
+  * ~~Image replacement~~
 
-* Responsive utilities
-  * Available classes
-  * Print classes
-  * Test cases
-
-* Using Less
-  * Compiling Bootstrap
-  * Variables
-  * Vendor mixins
-  * Utility mixins
-
-* Using Sass
-  * What's included
-  * Rails install
-
+* ~~Responsive utilities~~
+  * ~~Available classes~~
+  * ~~Print classes~~
+  * ~~Test cases~~
 
 ### Components
 
-* Glyphicons
-  * Available glyphs
-  * How to use
-  * Examples
-
+* ~~Glyphicons~~
 * Dropdowns
-  * Example
   * Alignment options
   * Headers
   * Disabled menu items
 
 * Button groups
-  * Basic example
+  * Basic
   * Button toolbar
   * ~~Sizing~~
   * Nesting
@@ -118,11 +95,11 @@
 * Button dropdowns
   * Single button dropdowns
   * Split button dropdowns
-  * Sizing
+  * ~~Sizing~~
   * Dropup variation
 
 * Input groups
-  * Basic example
+  * Basic
   * ~~Sizing~~
   * Checkbox and radios addons
   * Button addons
@@ -151,7 +128,6 @@
   * ~~Responsive elements~~
 
 * Breadcrumbs
-
 * Pagination
   * Default pagination
   * Pager
@@ -161,16 +137,14 @@
 * Jumbotron
 * Page header
 * Thumbnails
-  * Default example
-  * Custom content
+  * Default
 
 * Alerts
-  * Examples
   * ~~Dismissible alerts~~
   * Links in alerts
 
 * Progress bars
-  * Basic example
+  * Basic
   * With label
   * Low percentages
   * Contextual alternatives
@@ -191,7 +165,7 @@
   * Custom content
 
 * Panels
-  * Basic example
+  * Basic
   * Panel with heading
   * Contextual alternatives
   * With tables
