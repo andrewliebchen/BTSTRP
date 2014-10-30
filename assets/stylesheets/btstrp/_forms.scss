@@ -303,14 +303,6 @@ input[type="checkbox"] {
 }
 
 
-// Form control sizing
-//
-// Build on `.form-control` with modifier classes to decrease or increase the
-// height and font-size of form controls.
-
-@include input-size('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
-
-@include input-size('.input-lg', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
 
 
 // Form control feedback states
@@ -492,16 +484,6 @@ input[type="checkbox"] {
     @include make-row();
   }
 
-  // Reset spacing and right align labels, but scope to media queries so that
-  // labels on narrow viewports stack the same as a default form example.
-  @media (min-width: $screen-sm-min) {
-    .control-label {
-      text-align: right;
-      margin-bottom: 0;
-      padding-top: ($padding-base-vertical + 1); // Default padding plus a border
-    }
-  }
-
   // Validation states
   //
   // Reposition the icon because it's now within a grid column and columns have
@@ -509,30 +491,5 @@ input[type="checkbox"] {
   .has-feedback .form-control-feedback {
     top: 0;
     right: ($grid-gutter-width / 2);
-  }
-
-  // Form group sizes
-  //
-  // Quick utility class for applying `.input-lg` and `.input-sm` styles to the
-  // inputs and labels within a `.form-group`.
-  .form-group-lg {
-    @media (min-width: $screen-sm-min) {
-      .control-label {
-        padding-top: (($padding-large-vertical * $line-height-large) + 1);
-      }
-    }
-    .form-control {
-      @extend .input-lg;
-    }
-  }
-  .form-group-sm {
-    @media (min-width: $screen-sm-min) {
-      .control-label {
-        padding-top: ($padding-small-vertical + 1);
-      }
-    }
-    .form-control {
-      @extend .input-sm;
-    }
   }
 }

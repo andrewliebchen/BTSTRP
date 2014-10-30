@@ -51,7 +51,7 @@
   * Disabled state
   * Readonly state
   * Validation states
-  * Control sizing
+  * ~~Control sizing~~
   * Help text
 
 * Buttons
@@ -123,7 +123,7 @@
 
 * Input groups
   * Basic example
-  * Sizing
+  * ~~Sizing~~
   * Checkbox and radios addons
   * Button addons
   * Buttons with dropdowns
@@ -148,6 +148,7 @@
   * Fixed to bottom
   * Static top
   * Inverted navbar
+  * ~~Responsive elements~~
 
 * Breadcrumbs
 
@@ -195,7 +196,7 @@
   * Contextual alternatives
   * With tables
   * With list groups
-  * Responsive embed
+  * ~~Responsive embed~~
 
 * Wells
 

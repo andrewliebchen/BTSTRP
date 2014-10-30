@@ -6,3 +6,28 @@
   position: relative;
   border-radius: 1em;
 }
+
+.btstrp-browser {
+  padding-top: 1em;
+
+  &::before {
+    position: absolute;
+    top: 0.3em;
+    left: 0.3em;
+    content: "⋯";
+    font-size: 2em;
+    line-height: 0;
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: $gray-lighter;
+    border-bottom: 1px solid $gray-light;
+    content: "";
+    height: 1em;
+  }
+}
