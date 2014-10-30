@@ -1,10 +1,11 @@
 .btstrp {
   @include clearfix;
-  width: 100em;
+  width: $BTSTRP-container;
   border: 1px solid $gray-light;
   margin: 1em auto;
   position: relative;
-  border-radius: 1em;
+  border-radius: 0.5em;
+  overflow: hidden;
 }
 
 .btstrp-browser {
