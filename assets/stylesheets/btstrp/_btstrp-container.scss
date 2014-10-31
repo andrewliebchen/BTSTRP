@@ -1,11 +1,15 @@
 .btstrp {
   @include clearfix;
-  width: $BTSTRP-container;
-  border: 1px solid $gray-light;
-  margin: 1em auto;
-  position: relative;
   border-radius: 0.5em;
+  border: 1px solid $gray-light;
+  color: #333;
+  font-size: $BTSTRP-base;
+  line-height: 1.5;
+  margin: 1em auto;
   overflow: hidden;
+  position: relative;
+  width: $BTSTRP-container;
+  font-family: "BLOKKNeue-Regular", "helvetica neue", helvetica, arial, sans-serif;
 }
 
 .btstrp-browser {
