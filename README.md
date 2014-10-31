@@ -1,179 +1,49 @@
-## Bootstrap features in BTSTRP
-### CSS
-* Grid system
-  * ~~Media queries~~
-  * Responsive column resets
-  * Offsetting columns
-  * Nesting columns
-  * Column ordering
+# What is BTSTRP?
 
-* Typography
-  * Headings
-  * Body copy
-  * Inline text elements
-  * Alignment classes
-  * Transformation classes
-  * Abbreviations
-  * Addresses
-  * Blockquotes
-  * Lists
+BTSTRP is the smallest UI framework out there...Literally the smallest. BTSTRP has all the same basic components components, but they're just tiny. It's great for creating thumbnails and storyboards for websites and applications. Best of all, it uses the same markup structure as Bootstrap.
 
-* ~~Code~~
-  * ~~Inline code~~
-  * ~~User input~~
-  * ~~Blocks of code~~
-  * ~~Variables~~
-  * ~~Sample output~~
+## Getting started
 
-* Tables
-  * Basic example
-  * Striped rows
-  * Bordered table
-  * Hover rows
-  * Condensed table
-  * Contextual classes
-  * ~~Responsive tables~~
+Download or clone this repo. If your project uses Sass, you can import `btstrp.scss` into your project or just include `btstrp.css` in your site's `<head>`. If you're using vanilla CSS, just include `btstrp.css` in your site's `<head>`.
 
-* Forms
-  * Basic example
-  * Inline form
-  * Horizontal form
-  * Supported controls
-  * Static control
-  * Focus state
-  * Disabled state
-  * Readonly state
-  * Validation states
-  * ~~Control sizing~~
-  * Help text
+You can also install BTSTRP in your project with npm or Bower. Instructions.
 
-* Buttons
-  * Options
-  * ~~Sizes~~
-  * Active state
-  * Disabled state
-  * Button tags
-  * ~~Link button~~
+## Using BTSTRP in your project
+### The BTSTRP container
 
-* Images
-  * ~~Responsive images~~
-  * Image shapes
+Wrap your BTSTRP thumbnails in the `.btstrp-container` element like so:
 
-* Helper classes
-  * Contextual colors
-  * Contextual backgrounds
-  * Close icon
-  * Carets
-  * Quick floats
-  * Center content blocks
-  * Clearfix
-  * Showing and hiding content
-  * ~~Screen reader content~~
-  * ~~Image replacement~~
+```
+<div class="btstrp-container">
+  <!-- thumnbail markup -->
+</div>
+```
 
-* ~~Responsive utilities~~
-  * ~~Available classes~~
-  * ~~Print classes~~
-  * ~~Test cases~~
+If you'd like your container to have browser style, add `.btstrp-browser`.
 
-### Components
+```
+<div class="btstrp-container btstrp-browser">
+  <!-- thumbnail markup -->
+</div>
+```
 
-* ~~Glyphicons~~
-* Dropdowns
-  * Alignment options
-  * Headers
-  * Disabled menu items
+### Bootstrap features and components in BTSTRP
+Most Bootstrap features and components are available in BTSTRP. A few features are excluded because they're not necessary at BTSTRP's small scale. For example, there is only one button size, and no responsive elements.
 
-* Button groups
-  * Basic
-  * Button toolbar
-  * ~~Sizing~~
-  * Nesting
-  * ~~Vertical variation~~
-  * Justified link variation
-
-* Button dropdowns
-  * Single button dropdowns
-  * Split button dropdowns
-  * ~~Sizing~~
-  * Dropup variation
-
-* Input groups
-  * Basic
-  * ~~Sizing~~
-  * Checkbox and radios addons
-  * Button addons
-  * Buttons with dropdowns
-  * Segmented buttons
-
-* Navs
-  * Tabs
-  * Pills
-  * Justified nav
-  * Disabled links
-  * Using dropdowns
-
-* Navbar
-  * Default navbar
-  * Brand image
-  * Forms
-  * Buttons
-  * Text
-  * Non-nav links
-  * Component alignment
-  * Fixed to top
-  * Fixed to bottom
-  * Static top
-  * Inverted navbar
-  * ~~Responsive elements~~
-
-* Breadcrumbs
-* Pagination
-  * Default pagination
-  * Pager
-
-* Labels
-* Badges
-* Jumbotron
-* Page header
-* Thumbnails
-  * Default
-
-* Alerts
-  * ~~Dismissible alerts~~
-  * Links in alerts
-
-* Progress bars
-  * Basic
-  * With label
-  * Low percentages
-  * Contextual alternatives
-  * Striped
-  * Animated
-  * Stacked
-
-* Media object
-  * Default media
-  * Media list
-
-* List group
-  * Basic example
-  * Badges
-  * Linked items
-  * Disabled items
-  * Contextual classes
-  * Custom content
-
-* Panels
-  * Basic
-  * Panel with heading
-  * Contextual alternatives
-  * With tables
-  * With list groups
-  * ~~Responsive embed~~
-
-* Wells
-
-### Other removed things
-
-* Carousels
+Here's a list of **excluded** elements:
+* **Grid system** Media queries
+* **Code** Inline code, user input, blocks of code, variables, and sample output
+* **Tables** Responsive tables
+* **Forms** Control sizing
+* **Buttons** Sizes and link button
+* **Images** Responsive images
+* **Helper classes** Screen reader content, and image replacement
+* **Responsive utilities** Classes, print classes, and test cases
+* **Glyphicons**
+* **Button groups** Sizing and vertical variation
+* **Button dropdowns** Sizing
+* **Input groups** Sizing
+* **Navbar** Responsive elements
+* **Alerts** Dismissible alerts
+* **Responsive embed**
+* **Carousels**
