@@ -10,7 +10,17 @@ You can also install BTSTRP in your project with npm or Bower. Instructions.
 
 ### Working on BTSTRP locally
 
-Instructions.
+If you want to contribute to BTSTRP, or just work on it for yourself, you should fork and clone this repo. From your local BTSTRP directory run:
+
+```
+$ npm install
+```
+
+Grunt is set up to compile the SCSS into CSS, watch for changes, and spin up a development server.
+
+```
+$ grunt
+```
 
 ## Using BTSTRP in your project
 
