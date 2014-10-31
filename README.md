@@ -8,6 +8,10 @@ Download or clone this repo. If your project uses Sass, you can import `btstrp.s
 
 You can also install BTSTRP in your project with npm or Bower. Instructions.
 
+### Working on BTSTRP locally
+
+Instructions.
+
 ## Using BTSTRP in your project
 
 Most Bootstrap features and components are available in BTSTRP. A few features are excluded because they're not necessary at BTSTRP's small scale. For example, there is only one button size, and no responsive elements. For reference, you should refer to the excellent [Bootstrap documentation](http://getbootstrap.com/css/).
