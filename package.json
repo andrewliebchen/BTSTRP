@@ -1,5 +1,25 @@
 {
   "name": "BTSTRP",
+  "version": "0.0.1",
+  "description": "BTSTRP is the smallest UI framework. Literally.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andrewliebchen/BTSTRP"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "css",
+    "btstrp",
+    "grunt"
+  ],
+  "contributors": [
+    "Andrew Liebchen"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewliebchen/BTSTRP/issues"
+  },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "grunt": "^0.4.5",
