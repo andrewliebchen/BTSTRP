@@ -26,6 +26,17 @@ module.exports = function (grunt) {
       }
     },
 
+    cssmin: {
+      dist: {
+        files: {
+          'stylesheets/btstrp.min.css': 'stylesheets/btstrp.css'
+        },
+        options: {
+          keepSpecialComments: 0
+        }
+      }
+    },
+
     watch: {
       files: [
         'stylesheets/**/*'

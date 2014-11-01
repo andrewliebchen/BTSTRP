@@ -1,0 +1,23 @@
+{
+  "name": "BTSTRP",
+  "version": "0.0.1",
+  "homepage": "https://github.com/andrewliebchen/BTSTRP",
+  "authors": [
+    "andrewliebchen <andrewliebchen@gmail.com>"
+  ],
+  "description": "The smallest UI framework. Literally.",
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "css",
+    "grunt"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tmp",
+    "index.html"
+  ]
+}
