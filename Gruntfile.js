@@ -17,7 +17,7 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         files: {
-          'assets/stylesheets/btstrp.css': 'assets/stylesheets/btstrp.scss',
+          'stylesheets/btstrp.css': 'stylesheets/btstrp.scss',
         },
         options: {
           style: 'expanded',
@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 
     watch: {
       files: [
-        'assets/stylesheets/**/*'
+        'stylesheets/**/*'
       ],
       tasks: ['sass'],
       options: {
