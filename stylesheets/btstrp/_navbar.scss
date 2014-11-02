@@ -63,6 +63,7 @@
   left: 0;
   z-index: $zindex-navbar-fixed;
   @include translate3d(0, 0, 0);
+  margin-bottom: 0;
 }
 .navbar-fixed-top {
   top: 0;

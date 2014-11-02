@@ -68,5 +68,5 @@ Typography in BTSTRP thumbnails is brought to you by the excellent [BLOKK font](
 
 ## Why is this useful?
 
-BTSTRP is intended for creating series thumbnails of UIs and user flows for websites and applications. You can create a series of zoomed-out, "20,000 foot" interactive view of your site, which at a glance tell a whole story, like the page from a comic book.
+BTSTRP is intended for creating thumbnails of UIs and user flows for websites and applications. You can create a series of zoomed-out, "20,000 foot" interactive view of your site, which at a glance tell a whole story, like the page from a comic book.
 
