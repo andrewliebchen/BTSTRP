@@ -70,3 +70,9 @@ Typography in BTSTRP thumbnails is brought to you by the excellent [BLOKK font](
 
 BTSTRP is intended for creating thumbnails of UIs and user flows for websites and applications. You can create a series of zoomed-out, "20,000 foot" interactive view of your site, which at a glance tell a whole story, like the page from a comic book.
 
+## Contributing
+
+Admitted, this isn't well tested. Please submit issues for any problems you may encounter. If you'd like to contribute, feel free to open a PR. Also, I'd love to hear from you if you use BTSTRP as a part of your process.
+
+**Coming soon**: it'd be cool to have a way to easily string a series of thumbnails together into an entire UI flow.
+
