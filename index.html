@@ -6,12 +6,154 @@
   <link rel="stylesheet" href="stylesheets/btstrp.min.css" type="text/css" media="screen">
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="javascripts/bootstrap.js"></script>
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+      content: " ";
+      display: table;
+    }
+
+    .clearfix:after {
+      clear: both;
+    }
+
+    body, html {
+      font-family: "helvetica neue", helvetica, arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    a {
+      color: #0074D9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h3, p {
+      padding-bottom: 1em;
+    }
+
+    h1 {
+      font-size: 8em;
+      line-height: 1;
+      letter-spacing: -6px;
+      color: #ccc;
+    }
+
+    h2 {
+      font-weight: 200;
+      font-size: 2em;
+    }
+
+    pre {
+      padding: 1em;
+      text-align: center;
+      color: #666;
+      background-color: #f0f0f0;
+      border-radius: 3px;
+    }
+
+    .width-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1em;
+    }
+
+    .hero {
+      text-align: center;
+      position: relative;
+      padding: 5em 0 10em;
+    }
+
+    .headline {
+      margin-bottom: 10em;
+    }
+
+    .btstrp {
+      height: 250px;
+    }
+
+    .main, .call-to-action {
+      padding: 5em 0;
+    }
+
+    .main {
+      background-color: #F0F0F0;
+    }
+
+    .main .btstrp-example {
+      margin-top: 5em;
+    }
+
+    .or {
+      display: block;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    .button {
+      display: block;
+      border-radius: 3px;
+      background-color: #0074D9;
+      color: white;
+      padding: 1em;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      text-decoration: none;
+      background-color: #074cf5;
+    }
+  </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="hero">
-      <h1>The smallest UI framework. Literally.</h1>
+  <section class="hero">
+    <div class="width-wrapper">
+      <div class="headline">
+        <h1>BTSTRP</h1>
+        <h2>Litterally the smallest UI framework.</h2>
+      </div>
+      <div class="btstrp btstrp-example"></div>
     </div>
-  </div>
+  </section>
+  <section class="main">
+    <div class="width-wrapper">
+      <p><strong>BTSTRP</strong> has all the same basic components as <a href="http://www.getbootstrap.com/">Bootstrap</a>, but they're just tiny. Best of all, it uses Bootstrap's markup structure.</p>
+      <p><strong>BTSTRP</strong> is intended for creating series thumbnails of UIs and user flows for websites and applications. You can create a series of zoomed-out, "20,000 foot" interactive view of your site, which at a glance tell a whole story, like the page from a comic book.</p>
+      <div class="btstrp btstrp-example"></div>
+    </div>
+  </section>
+  <section class="call-to-action">
+    <div class="width-wrapper">
+      <a href="http://www.github.com/andrewliebchen/BTSTRP" class="button">Download from Github</a>
+      <span class="or">or</span>
+      <pre>$ npm install btstrp</pre>
+      <span class="or">or</span>
+      <pre>$ bower install btstrp</pre>
+    </div>
+  </section>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56315050-2', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
 </html>
