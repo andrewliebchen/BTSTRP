@@ -1,0 +1,94 @@
+{
+  "name": "andrewliebchen/BTSTRP",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.19"
+  },
+  "title": "BTSTRP",
+  "branch": "gh-pages",
+  "style": {
+    "name": "Future",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "alternativeText": {
+      "textTransform": "uppercase",
+      "fontWeight": 400,
+      "letterSpacing": "0.2em",
+      "opacity": 0.75
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    },
+    "layout": {
+      "centered": true,
+      "maxWidth": 1024,
+      "bannerHeight": "80vh"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://andrewliebchen.github.io/BTSTRP",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/andrewliebchen/BTSTRP",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/btstrp",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "BTSTRP",
+      "subhead": "Literally the smallest UI framework.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "BTSTRP: Literally the smallest UI framework.",
+          "url": "http://andrewliebchen.github.io/BTSTRP"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "andrewliebchen",
+          "repo": "BTSTRP"
+        }
+      ],
+      "text": "v0.0.3"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/andrewliebchen/BTSTRP",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/andrewliebchen",
+          "text": "andrewliebchen"
+        }
+      ]
+    }
+  ]
+}
